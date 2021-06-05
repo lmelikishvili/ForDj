@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div style="border: 2px solid #000;">
+        <p>This is a django file content</p>
+        {% for item in list_content %}
+            {% include 'personal/snippets/body_snippet.html' with value=item %}
+        {% endfor %}
+        
+    </div>
+    
+
+{% endblock content %}
