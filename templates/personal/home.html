@@ -3,8 +3,8 @@
 {% block content %}
 
     <div style="border: 2px solid #000;">
-        <p>This is a django file content</p>
-        {% for item in list_content %}
+        <h1>This is a django file Questions from DB</h1>
+        {% for item in questions %}
             {% include 'personal/snippets/body_snippet.html' with value=item %}
         {% endfor %}
         
